@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./img/logo5.jpg" type="img/jpg" sizes="16x16">
+    <link rel="stylesheet" href="css/coffeetalks.css">
+    <title>Gallery頭靠相簿</title>
+    <style>
+    
+       
+    </style>
+</head>
+
+<body>
+    <div class="headbanner" id="glow">
+        <h1 style="font-size: 75px;">頭靠Gallery</h1>
+    </div>
+    <br>
+    <div id="mySidenav" class="sidenav">
+        <a href="Index.html" id="greennav">Home</a>
+        <a href="GalleryPage.html" id="bluenav">Gallery</a>
+        <a href="ShoppingPage.html" id="orangenav">Shop</a>
+        <a href="Contact.html" id="yellownav">Contact</a>
+    </div>
+    <div class="cage">
+        <div class="lgkitpic">
+            <img src="./img/k01.jpg" style="width: 100%">
+        </div>
+        <div class="lgkitpic">
+            <img src="./img/k02.jpg" style="width: 100%">
+        </div>
+        <div class="lgkitpic">
+            <img src="./img/k03.jpg" style="width: 100%">
+        </div>
+        <div class="lgkitpic">
+            <img src="./img/k04.jpg" style="width: 100%">
+        </div>
+        <div class="lgkitpic">
+            <img src="./img/k05.jpg" style="width: 100%">
+        </div>
+        <div class="lgkitpic">
+            <img src="./img/k06.jpg" style="width: 100%">
+        </div>
+        <div class="lgkitpic">
+            <img src="./img/k07.jpg" style="width: 100%">
+        </div>
+        <div class="lgkitpic">
+            <img src="./img/k08.jpg" style="width: 100%">
+        </div>
+        <div class="lgkitpic">
+            <img src="./img/k09.jpg" style="width: 100%">
+        </div>
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+
+        <!-- <div class="caption-container">
+                <p id="caption"></p> 
+            </div> -->
+        <div class="shelf">
+            <div class="smkitpic">
+                <img class="slideshow" src="./img/k01.jpg" style="width:100%" onclick="currentSlide(1)" alt="">
+            </div>
+            <div class="smkitpic">
+                <img class="slideshow" src="./img/k02.jpg" style="width:100%" onclick="currentSlide(2)" alt="">
+            </div>
+            <div class="smkitpic">
+                <img class="slideshow" src="./img/k03.jpg" style="width:100%" onclick="currentSlide(3)" alt="">
+            </div>
+            <div class="smkitpic">
+                <img class="slideshow" src="./img/k04.jpg" style="width:100%" onclick="currentSlide(4)" alt="">
+            </div>
+            <div class="smkitpic">
+                <img class="slideshow" src="./img/k05.jpg" style="width:100%" onclick="currentSlide(5)" alt="">
+            </div>
+            <div class="smkitpic">
+                <img class="slideshow" src="./img/k06.jpg" style="width:100%" onclick="currentSlide(6)" alt="">
+            </div>
+            <div class="smkitpic">
+                <img class="slideshow" src="./img/k07.jpg" style="width:100%" onclick="currentSlide(7)" alt="">
+            </div>
+            <div class="smkitpic">
+                <img class="slideshow" src="./img/k08.jpg" style="width:100%" onclick="currentSlide(8)" alt="">
+            </div>
+            <div class="smkitpic">
+                <img class="slideshow" src="./img/k09.jpg" style="width:100%" onclick="currentSlide(9)" alt="">
+            </div>
+
+        </div>
+
+    </div>
+    <!-- <div>
+        <p class="footnote">更多相片請洽頭靠咖啡臉書粉專或IG</p>
+    </div> -->
+    <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n); //更換圖片
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("lgkitpic");
+            var appear = document.getElementsByClassName("smkitpic");
+            // var captionText = document.getElementById("caption");
+            if (n > slides.length) { slideIndex = 1; }
+            if (n < 1) { slideIndex = slides.length; }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < appear.length; i++) {
+                appear[i].className = appear[i].className.replace(" active", "");//active前面要加空白嗎?
+            }
+            slides[slideIndex - 1].style.display = "block";
+            appear[slideIndex - 1].className += " active";
+            // captionText.innerHTML = appear[slideIndex - 1].alt; //將來若要在圖片中加文字
+        }
+    </script>
+
+</body>
+
+</html>

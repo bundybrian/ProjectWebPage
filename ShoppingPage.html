@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./img/logo5.jpg" type="img/jpg" sizes="16x16">
+    <title>頭靠咖啡Shop</title>
+    <link rel="stylesheet" href="css/coffeetalks.css">
+    <style>
+
+    </style>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>
+        $(function () {
+            $("#draggable").draggable();
+        });
+    </script>
+</head>
+
+<body>
+    <div class="headbanner">
+        <h1 style="font-size: 75px;">頭靠咖啡Shop</h1>
+    </div>
+
+    <div class="tab">
+        <button class="tablinks" onclick="openCat(event, 'cfbean')">Coffee Bean</button>
+        <button class="tablinks" onclick="openCat(event, 'cfdrip')">Drip Bag</button>
+        <button class="tablinks" onclick="openCat(event, 'cftea')">Tea</button>
+        <button class="tablinks" onclick="openCat(event, 'cfaccessory')">Accessory</button>
+    </div>
+    <div id="mySidenav" class="sidenav">
+        <a href="Index.html" id="greennav">Home</a>
+        <a href="GalleryPage.html" id="bluenav">Gallery</a>
+        <a href="ShoppingPage.html" id="orangenav">Shop</a>
+        <a href="Contact.html" id="yellownav">Contact</a>
+    </div>
+    <div id="cfbean" class="tabcontent">
+        <table>
+            <tr>
+                <td colspan="4" class="tbhead">
+                    <h2>咖啡豆</h2>
+            <tr>
+                <td rowspan="4" class="tbpic">
+                    <img src="img/shopA2.jpg" style="width: 100%">
+                <td class="tbname"><b>哥倫比亞 考卡區<br>La Esperanza 日曬淺焙</b>
+                <td rowspan="4" class="tbpic">
+                    <img src="img/shopA2.jpg" style="width: 100%">
+                <td class="tbname"><b>哥倫比亞 考卡區<br> Finca ElParais 雙重厭氧發酵淺焙</b>
+            <tr>
+                <td class="tbdesc">藍莓夾心|甜白酒|鳳梨釀|蜜桃乾|花酌Hanashaku|藝妓Gesha
+                <td class="tbdesc">荔枝軟糖|山竹|可爾必思|玫瑰茶|艷夏花荔Flor Lichi
+            <tr>
+                <td class="tbprice">重量:100公克 <br> <span class="unitprice" id="unitprice1">500</span>元
+                <td class="tbprice">重量:100公克 <br> <span class="unitprice" id="unitprice2">550</span>元
+            <tr>
+                <td class="tborder">
+                    <div class="tbamount">
+                        <label for="amount1">數量:</label>
+                        <select id="amount1" class="selbtn">
+                            <option id="am0" name="am0" value="0">0</option>
+                            <option id="am1" name="am1" value="1">1</option>
+                            <option id="am2" name="am2" value="2">2</option>
+                            <option id="am3" name="am3" value="3">3</option>
+                            <option id="am4" name="am4" value="4">4</option>
+                            <option id="am5" name="am5" value="5">5</option>
+                            <option id="am6" name="am6" value="6">6</option>
+                            <option id="am7" name="am7" value="7">7</option>
+                        </select>
+                        <button class="tborderbtn" id="tborder1">訂購</button>
+                    </div>
+                <td class="tborder">
+                    <div class="tbamount">
+                        <label for="amount2">數量:</label>
+                        <select id="amount2" class="selbtn">
+                            <option id="am0" name="am0" value="0">0</option>
+                            <option id="am1" name="am1" value="1">1</option>
+                            <option id="am2" name="am2" value="2">2</option>
+                            <option id="am3" name="am3" value="3">3</option>
+                            <option id="am4" name="am4" value="4">4</option>
+                            <option id="am5" name="am5" value="5">5</option>
+                            <option id="am6" name="am6" value="6">6</option>
+                            <option id="am7" name="am7" value="7">7</option>
+                        </select>
+                        <button class="tborderbtn" id="tborder2">訂購</button>
+                    </div>
+            <tr>
+                <td colspan="4" class="tbblank">
+            <tr>
+                <td rowspan="4" class="tbpic">
+                    <img src="img/shopA.jpg" style="width: 100%">
+                <td class="tbname"><b>衣索比亞 耶加雪菲<br>Banko Gotiti G1 水洗淺焙</b>
+                <td rowspan="4" class="tbpic">
+                    <img src="img/shopA.jpg" style="width: 100%">
+                <td class="tbname"><b>衣索比亞 利姆<br>Kata Maduga G1 水洗淺焙</b>
+            <tr>
+                <td class="tbdesc">柳丁|小紅莓|龍眼蜜|萊姆
+                <td class="tbdesc">柑橘|蜂蜜檸檬草|小紅莓|可可韻
+            <tr>
+                <td class="tbprice">重量:200公克 <br> <span class="unitprice" id="unitprice3">400</span>元
+                <td class="tbprice">重量:200公克 <br> <span class="unitprice" id="unitprice4">420</span>元
+            <tr>
+                <td class="tborder">
+                    <div class="tbamount">
+                        <label for="amount3">數量:</label>
+                        <select id="amount3" class="selbtn">
+                            <option id="am0" name="am0" value="0">0</option>
+                            <option id="am1" name="am1" value="1">1</option>
+                            <option id="am2" name="am2" value="2">2</option>
+                            <option id="am3" name="am3" value="3">3</option>
+                            <option id="am4" name="am4" value="4">4</option>
+                            <option id="am5" name="am5" value="5">5</option>
+                            <option id="am6" name="am6" value="6">6</option>
+                            <option id="am7" name="am7" value="7">7</option>
+                        </select>
+                        <button class="tborderbtn" id="tborder3">訂購</button>
+                    </div>
+                <td class="tborder">
+                    <div class="tbamount">
+                        <label for="amount4">數量:</label>
+                        <select id="amount4" class="selbtn">
+                            <option id="am0" name="am0" value="0">0</option>
+                            <option id="am1" name="am1" value="1">1</option>
+                            <option id="am2" name="am2" value="2">2</option>
+                            <option id="am3" name="am3" value="3">3</option>
+                            <option id="am4" name="am4" value="4">4</option>
+                            <option id="am5" name="am5" value="5">5</option>
+                            <option id="am6" name="am6" value="6">6</option>
+                            <option id="am7" name="am7" value="7">7</option>
+                        </select>
+                        <button class="tborderbtn" id="tborder4">訂購</button>
+                    </div>
+            <tr>
+                <td colspan="4" class="blank">
+            <tr>
+                <td rowspan="4" class="tbpic">
+                    <img src="img/shopA.jpg" style="width: 100%">
+                <td class="tbname"><b>衣索比亞 古吉<br>Anasora Yirba Muda 水洗淺焙</b>
+            <tr>
+                <td class="tbdesc">白桃|檸檬|白花|伯爵茶
+            <tr>
+                <td class="tbprice">重量:200公克 <br> <span class="unitprice" id="unitprice5">400</span>元
+            <tr>
+                <td class="tborder">
+                    <div class="tbamount">
+                        <label for="amount5">數量:</label>
+                        <select id="amount5" class="selbtn">
+                            <option id="am0" name="am0" value="0">0</option>
+                            <option id="am1" name="am1" value="1">1</option>
+                            <option id="am2" name="am2" value="2">2</option>
+                            <option id="am3" name="am3" value="3">3</option>
+                            <option id="am4" name="am4" value="4">4</option>
+                            <option id="am5" name="am5" value="5">5</option>
+                            <option id="am6" name="am6" value="6">6</option>
+                            <option id="am7" name="am7" value="7">7</option>
+                        </select>
+                        <button class="tborderbtn" id="tborder5">訂購</button>
+                    </div>
+        </table>
+        <br>
+        <br>
+        <br>
+    </div>
+    <div class="tabcontent" id="cfdrip">
+        <table>
+            <tr>
+                <td colspan="4" class="tbhead">
+                    <h2>濾掛咖啡</h2>
+            <tr>
+                <td rowspan="4" class="tbpic">
+                    <img src="img/shopB1.jpg" style="width: 100%">
+                <td class="tbname"><b>衣索比亞|中南美洲|肯亞|哥倫比亞|亞洲|巴布亞新幾內亞<br></b>
+            <tr>
+                <td rowspan="3" class="tbdesc">
+                    單包:<span class="unitprice" id="unitprice6">45</span>元<label for="amount6">數量:</label>
+                    <select id="amount6" class="selbtn">
+                        <option id="am0" name="am0" value="0">0</option>
+                        <option id="am1" name="am1" value="1">1</option>
+                        <option id="am2" name="am2" value="2">2</option>
+                        <option id="am3" name="am3" value="3">3</option>
+                        <option id="am4" name="am4" value="4">4</option>
+                        <option id="am5" name="am5" value="5">5</option>
+                        <option id="am6" name="am6" value="6">6</option>
+                        <option id="am7" name="am7" value="7">7</option>
+                    </select>
+                    <button class="tborderbtn" id="tborder6">訂購</button><br>
+                    10包:<span class="unitprice" id="unitprice7">380</span>元<label for="amount7">數量:</label>
+                    <select id="amount7" class="selbtn">
+                        <option id="am0" name="am0" value="0">0</option>
+                        <option id="am1" name="am1" value="1">1</option>
+                        <option id="am2" name="am2" value="2">2</option>
+                        <option id="am3" name="am3" value="3">3</option>
+                        <option id="am4" name="am4" value="4">4</option>
+                        <option id="am5" name="am5" value="5">5</option>
+                        <option id="am6" name="am6" value="6">6</option>
+                        <option id="am7" name="am7" value="7">7</option>
+                    </select>
+                    <button class="tborderbtn" id="tborder7">訂購</button><br>
+                    20包:<span class="unitprice" id="unitprice8">750</span>元<label for="amount8">數量:</label>
+                    <select id="amount8" class="selbtn">
+                        <option id="am0" name="am0" value="0">0</option>
+                        <option id="am1" name="am1" value="1">1</option>
+                        <option id="am2" name="am2" value="2">2</option>
+                        <option id="am3" name="am3" value="3">3</option>
+                        <option id="am4" name="am4" value="4">4</option>
+                        <option id="am5" name="am5" value="5">5</option>
+                        <option id="am6" name="am6" value="6">6</option>
+                        <option id="am7" name="am7" value="7">7</option>
+                    </select>
+                    <button class="tborderbtn" id="tborder8">訂購</button><br>
+                    30包:<span class="unitprice" id="unitprice9">1110</span>元<label for="amount9">數量:</label>
+                    <select id="amount9" class="selbtn">
+                        <option id="am0" name="am0" value="0">0</option>
+                        <option id="am1" name="am1" value="1">1</option>
+                        <option id="am2" name="am2" value="2">2</option>
+                        <option id="am3" name="am3" value="3">3</option>
+                        <option id="am4" name="am4" value="4">4</option>
+                        <option id="am5" name="am5" value="5">5</option>
+                        <option id="am6" name="am6" value="6">6</option>
+                        <option id="am7" name="am7" value="7">7</option>
+                    </select>
+                    <button class="tborderbtn" id="tborder9">訂購</button><br>
+                    40包:<span class="unitprice" id="unitprice10">1440</span>元<label for="amount9">數量:</label>
+                    <select id="amount10" class="selbtn">
+                        <option id="am0" name="am0" value="0">0</option>
+                        <option id="am1" name="am1" value="1">1</option>
+                        <option id="am2" name="am2" value="2">2</option>
+                        <option id="am3" name="am3" value="3">3</option>
+                        <option id="am4" name="am4" value="4">4</option>
+                        <option id="am5" name="am5" value="5">5</option>
+                        <option id="am6" name="am6" value="6">6</option>
+                        <option id="am7" name="am7" value="7">7</option>
+                    </select>
+                    <button class="tborderbtn" id="tborder10">訂購</button><br>
+                    50包:<span class="unitprice" id="unitprice11">1790</span>元<label for="amount10">數量:</label>
+                    <select id="amount11" class="selbtn">
+                        <option id="am0" name="am0" value="0">0</option>
+                        <option id="am1" name="am1" value="1">1</option>
+                        <option id="am2" name="am2" value="2">2</option>
+                        <option id="am3" name="am3" value="3">3</option>
+                        <option id="am4" name="am4" value="4">4</option>
+                        <option id="am5" name="am5" value="5">5</option>
+                        <option id="am6" name="am6" value="6">6</option>
+                        <option id="am7" name="am7" value="7">7</option>
+                    </select>
+                    <button class="tborderbtn" id="tborder11">訂購</button><br>
+        </table>
+        <br>
+        <br>
+        <br>
+    </div>
+    <div id="cftea" class="tabcontent">
+        <table>
+            <tr>
+                <td colspan="4" class="tbhead">
+                    <h2>茶</h2>
+            <tr>
+                <td rowspan="4" class="tbpic">
+                    <img src="img/shopC2.jpg" style="width: 100%">
+                <td class="tbname"><b>歐洲水果茶<br>Europe Fruit Basket Tea</b>
+                <td rowspan="4" class="tbpic">
+                    <img src="img/shopC2.jpg" style="width: 100%">
+                <td class="tbname"><b>日本玄米茶<br>Japan Green Tea Genmaicha</b>
+            <tr>
+                <td class="tbdesc">蘋果|洛神花|黑醋栗|黑莓|接骨木|覆盆子|草莓
+                <td class="tbdesc">日本煎茶|糙米
+            <tr>
+                <td class="tbprice">重量:4g*10入 <br> <span class="unitprice" id="unitprice12">300</span>元
+                <td class="tbprice">重量:3g*10入 <br> <span class="unitprice" id="unitprice13">300</span>元
+            <tr>
+                <td class="tborder">
+                    <div class="tbamount">
+                        <label for="amount12">數量:</label>
+                        <select id="amount12" class="selbtn">
+                            <option id="am0" name="am0" value="0">0</option>
+                            <option id="am1" name="am1" value="1">1</option>
+                            <option id="am2" name="am2" value="2">2</option>
+                            <option id="am3" name="am3" value="3">3</option>
+                            <option id="am4" name="am4" value="4">4</option>
+                            <option id="am5" name="am5" value="5">5</option>
+                            <option id="am6" name="am6" value="6">6</option>
+                            <option id="am7" name="am7" value="7">7</option>
+                        </select>
+                        <button class="tborderbtn" id="tborder12">訂購</button>
+                    </div>
+                <td>
+                    <div class="tbamount">
+                        <label for="amount13">數量:</label>
+                        <select id="amount13" class="selbtn">
+                            <option id="am0" name="am0" value="0">0</option>
+                            <option id="am1" name="am1" value="1">1</option>
+                            <option id="am2" name="am2" value="2">2</option>
+                            <option id="am3" name="am3" value="3">3</option>
+                            <option id="am4" name="am4" value="4">4</option>
+                            <option id="am5" name="am5" value="5">5</option>
+                            <option id="am6" name="am6" value="6">6</option>
+                            <option id="am7" name="am7" value="7">7</option>
+                        </select>
+                        <button class="tborderbtn" id="tborder13">訂購</button>
+                    </div>
+
+            <tr>
+        </table>
+        <br>
+        <br>
+        <br>
+    </div>
+
+    <div class="tabcontent" id="cfaccessory">
+        <table>
+            <tr>
+                <td colspan="4" class="tbhead">
+                    <h2>配件</h2>
+            <tr>
+                <td rowspan="4" class="tbpic">
+                    <img src="img/shopD1.jpg" style="width: 100%">
+                <td class="tbname"><b>HARIO Coffee Paper Filter</b>
+                <td rowspan="4" class="tbpic">
+                    <img src="img/shopD2.jpg" style="width: 100%">
+                <td class="tbname"><b>Abaca Coffee Paper Filter</b>
+            <tr>
+                <td class="tbdesc">Flexible V60<br>白色、咖啡色<br>
+                <td class="tbdesc">Cone for 1cup
+            <tr>
+                <td class="tbprice">100入 <br> <span class="unitprice" id="unitprice14">120</span>元
+                <td class="tbprice">100入 <br> <span class="unitprice" id="unitprice15">100</span>元
+            <tr>
+                <td class="tborder">
+                    <div class="tbamount">
+                        <label for="amount14">數量:</label>
+                        <select id="amount14" class="selbtn">
+                            <option id="am0" name="am0" value="0">0</option>
+                            <option id="am1" name="am1" value="1">1</option>
+                            <option id="am2" name="am2" value="2">2</option>
+                            <option id="am3" name="am3" value="3">3</option>
+                            <option id="am4" name="am4" value="4">4</option>
+                            <option id="am5" name="am5" value="5">5</option>
+                            <option id="am6" name="am6" value="6">6</option>
+                            <option id="am7" name="am7" value="7">7</option>
+                        </select>
+                        <button class="tborderbtn" id="tborder14">訂購</button>
+                    </div>
+                <td class="tborder">
+                    <div class="tbamount">
+                        <label for="amount14">數量:</label>
+                        <select id="amount14" class="selbtn">
+                            <option id="am0" name="am0" value="0">0</option>
+                            <option id="am1" name="am1" value="1">1</option>
+                            <option id="am2" name="am2" value="2">2</option>
+                            <option id="am3" name="am3" value="3">3</option>
+                            <option id="am4" name="am4" value="4">4</option>
+                            <option id="am5" name="am5" value="5">5</option>
+                            <option id="am6" name="am6" value="6">6</option>
+                            <option id="am7" name="am7" value="7">7</option>
+                        </select>
+                        <button class="tborderbtn" id="tborder15">訂購</button>
+                    </div>
+            <tr>
+                <td colspan="4" class="tbblank">
+            <tr>
+                <td rowspan="4" class="tbpic">
+                    <img src="img/shopD3.jpg" style="width: 100%">
+                <td class="tbname"><b>4THETURTLES</b>
+            <tr>
+                <td class="tbdesc">可重複使用<br>拯救海龜|為環保盡一份心力
+            <tr>
+                <td class="tbprice">一組包含吸管、管刷 <br> <span class="unitprice" id="unitprice16">350</span>元
+            <tr>
+                <td class="tborder">
+                    <div class="tbamount">
+                        <label for="amount16">數量:</label>
+                        <select id="amount16" class="selbtn">
+                            <option id="am0" name="am0" value="0">0</option>
+                            <option id="am1" name="am1" value="1">1</option>
+                            <option id="am2" name="am2" value="2">2</option>
+                            <option id="am3" name="am3" value="3">3</option>
+                            <option id="am4" name="am4" value="4">4</option>
+                            <option id="am5" name="am5" value="5">5</option>
+                            <option id="am6" name="am6" value="6">6</option>
+                            <option id="am7" name="am7" value="7">7</option>
+                        </select>
+                        <button class="tborderbtn" id="tborder16">訂購</button>
+                    </div>
+        </table>
+        <br>
+        <br>
+        <br>
+    </div>
+    <div id="draggable" class="ui-widget-content">
+        <br><br><br><br>
+        小計:<span class="shopbag" id="shopbag"></span><br>
+        <button>結帳</button>
+    </div>
+    <script>
+        function openCat(event, catgory) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(catgory).style.display = "block";
+            this.className += " active";
+            // event.currentTarget  
+        }
+
+
+        $(".tborderbtn").click(function () {
+            var unitamount, totalamount, unitprice;
+            var index = $(".tborderbtn").index(this) + 1;
+            //console.log(index);
+            unitprice = $("#unitprice" + index).text();
+            //console.log(unitprice);
+            unitamount = $("#amount" + index).val();
+            //console.log(unitamount);
+            totalamount = unitprice * unitamount;
+            $("#shopbag").html(+$("#shopbag").html() + totalamount);
+
+        })
+    </script>
+
+</body>
+
+</html>

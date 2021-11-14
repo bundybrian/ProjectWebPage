@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>登入 Coffee Talks 頭靠咖啡</title>
+    <link rel="icon" href="./img/logo5.jpg" type="img/jpg" sizes="16x16">
+    
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            background: url("./img/logo3.jpg") no-repeat fixed center;
+            background-size: contain;
+        }
+
+        div {
+            font-size: x-large;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+
+        .loginfm {
+            background-color: rgba(255, 255, 255, 0.8);
+            max-width: 400px;
+            position: absolute;
+            right: 0;
+            margin: 0 2%;
+            padding: 8% 5%;
+
+        }
+
+        input[type=email],
+        input[type=password] {
+            background-color: lightgray;
+            font-size: large;
+            padding: 5px;
+            border: none;
+
+        }
+
+        input[type=email]:focus,
+        input[type=password]:focus {
+            background-color: rgb(170, 170, 170);
+            outline: none;
+        }
+
+        .loginbtn {
+            background-color: lightskyblue;
+            color: black;
+            font-size: medium;
+            width: 100%;
+            padding: 7%;
+            border: none;
+            opacity: 0.9;
+            cursor: pointer;
+        }
+
+        .loginbtn :hover {
+            opacity: 1;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class='loginPg'>
+        <form class="loginfm">
+            <h1>Login</h1>
+            <br>
+            <label for="email"><b>Email</b></label> <br>
+            <input type="email" placeholder="abc@gmail.com" name="email" required autofocus> <br>
+            <br>
+            <label for="password"><b>Password</b></label><br>
+            <input type="password" placeholder="Enter Password" name="password" required><br>
+            <br>
+            <button class="loginbtn" id="loginBtn"><b>Login</b></button> <!-- 之後要配合資料庫登錄會員 -->
+
+        </form>
+    </div>
+    <script>
+        document.getElementById('loginBtn').onclick = function () {
+            location.href = "Index.html";
+        };
+
+        // setTimeout( function(){
+        //     document.location.href = "Index.html";
+        // }  , 10000 ); //一段時間後沒輸入就以guest的身份進入,目前暫設定10秒
+
+    </script>
+</body>
+
+</html>
